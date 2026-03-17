@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Minhook">
+      <UniqueIdentifier>{5a5eacf3-5525-4d0d-9f43-eebcbe02cdc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui">
+      <UniqueIdentifier>{8b51734b-35e9-48a5-9d16-eedc6ccd4cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Aim">
+      <UniqueIdentifier>{e8401705-4cf3-4921-b7c9-595a63b10c66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Visuals">
+      <UniqueIdentifier>{377627e3-d411-4660-a824-7485acdc11e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Menu/Misc/Main">
+      <UniqueIdentifier>{44c52cc1-40ad-4c21-be47-24b1f60de208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\output">
+      <UniqueIdentifier>{75e1423e-063a-40c0-93ba-fbee60e46c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk">
+      <UniqueIdentifier>{91ab3add-367f-4f93-a453-3a88643e70ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve">
+      <UniqueIdentifier>{587d2942-4761-41dc-9493-eecb7d7e95f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\config_system">
+      <UniqueIdentifier>{88a375f3-6561-40b9-aa0c-d73fc4d1fb19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\console">
+      <UniqueIdentifier>{0339b116-af0a-426c-8aa6-dbdeb262140a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\includes">
+      <UniqueIdentifier>{3b7b4a67-f017-49f5-a267-42666bc05c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\typedefs">
+      <UniqueIdentifier>{6961a2b4-34d9-47d7-b816-2599c34e4c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\vfunc">
+      <UniqueIdentifier>{315304e8-cb90-4f5b-8d28-aa11133af3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve\classes">
+      <UniqueIdentifier>{1a737109-fbfe-459b-abb7-675139d20a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve\interfaces">
+      <UniqueIdentifier>{269af7b8-ac03-4e53-82ac-3ab767488c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve\modules">
+      <UniqueIdentifier>{9c51e63f-3a28-434d-9f68-50059dd72d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve\schema">
+      <UniqueIdentifier>{41d28868-f8e9-4af1-99d3-6984c257129d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\valve\interfaces\vtables">
+      <UniqueIdentifier>{a7b35d98-c6d0-4901-90b4-bfac3f9fc59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\utils">
+      <UniqueIdentifier>{151999fb-3b72-4d66-8843-50eec573a6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\math">
+      <UniqueIdentifier>{8323a4bf-aad6-46fb-a06a-33543f446484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\hooks">
+      <UniqueIdentifier>{6032fae6-bed0-4d9e-90a9-29d9d9063852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\directx">
+      <UniqueIdentifier>{7bf6a1b2-7735-4589-a506-856307762355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\entity_system">
+      <UniqueIdentifier>{3d7f313d-26bd-4970-9bfc-8b6d66ea439b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Aimbot.cpp">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClCompile>
+    <ClCompile Include="rcs.cpp">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClCompile>
+    <ClCompile Include="triggerbot.cpp">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClCompile>
+    <ClCompile Include="ESP.cpp">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="chams.cpp">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLMain.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="movement.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="radar.cpp">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="BombTimer.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SpectatorList.cpp">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClCompile>
+    <ClCompile Include="HitMarker.cpp">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\interfaces.cpp">
+      <Filter>Исходные файлы\valve\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\cs_usercmd.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\i_convar.cpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\i_trace.cpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\netmessages.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\network_connection.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\networkbasetypes.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\usercmd.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\interfaces\vtables\usermessages.pb.cc">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\modules\modules.cpp">
+      <Filter>Исходные файлы\valve\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="valve\schema\schema.cpp">
+      <Filter>Исходные файлы\valve\schema</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\utils.cpp">
+      <Filter>Исходные файлы\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="math\math.cpp">
+      <Filter>Исходные файлы\math</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks.cpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="directx\directx.cpp">
+      <Filter>Исходные файлы\directx</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_system\entity.cpp">
+      <Filter>Исходные файлы\entity_system</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\MinHook.h">
+      <Filter>Исходные файлы\Minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="damagescale.h">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="Aimbot.h">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="rcs.h">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="triggerbot.h">
+      <Filter>Исходные файлы\Aim</Filter>
+    </ClInclude>
+    <ClInclude Include="ESP.h">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="chams.h">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="movement.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="radar.h">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="BombTimer.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SpectatorList.h">
+      <Filter>Исходные файлы\Menu/Misc/Main</Filter>
+    </ClInclude>
+    <ClInclude Include="HitMarker.h">
+      <Filter>Исходные файлы\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="output\animationsystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\buttons.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\client_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\engine2_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\host_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\interfaces.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\materialsystem2_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\networksystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\offsets.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\panorama_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\particles_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\pulse_system_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\rendersystemdx11_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\resourcesystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\scenesystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\schemasystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\server_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\soundsystem_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\steamaudio_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\vphysics2_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="output\worldrenderer_dll.hpp">
+      <Filter>Исходные файлы\output</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_cs_player_controller.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_cs_player_pawn.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_envy_sky.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_model.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_player_camera_service.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_post_processing.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_scene_light_obj.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\c_view_setup.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\classes\game_enums.hpp">
+      <Filter>Исходные файлы\valve\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\interfaces.hpp">
+      <Filter>Исходные файлы\valve\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\cs_usercmd.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_client.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_convar.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_csgo_input.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_engine_client.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_file_system.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_global_vars.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_localize.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_mem_alloc.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_network_game_client.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_resource_game_system.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_scene_system.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_schema_system.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\i_trace.hpp">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\netmessages.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\network_connection.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\networkbasetypes.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\usercmd.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\interfaces\vtables\usermessages.pb.h">
+      <Filter>Исходные файлы\valve\interfaces\vtables</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\modules\modules.hpp">
+      <Filter>Исходные файлы\valve\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="valve\schema\schema.hpp">
+      <Filter>Исходные файлы\valve\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\key_handler.hpp">
+      <Filter>Исходные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.hpp">
+      <Filter>Исходные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="math\math.hpp">
+      <Filter>Исходные файлы\math</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\hooks.hpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="directx\directx.hpp">
+      <Filter>Исходные файлы\directx</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_system\entity.hpp">
+      <Filter>Исходные файлы\entity_system</Filter>
+    </ClInclude>
+    <ClInclude Include="darkside.hpp">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\minhook.x64d.lib">
+      <Filter>Исходные файлы\Minhook</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="output\animationsystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\animationsystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\animationsystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\buttons.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\buttons.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\buttons.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\client_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\client_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\client_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\engine2_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\engine2_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\engine2_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\host_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\host_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\host_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\info.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\interfaces.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\interfaces.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\interfaces.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\materialsystem2_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\materialsystem2_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\materialsystem2_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\networksystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\networksystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\networksystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\offsets.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\offsets.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\offsets.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\panorama_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\panorama_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\panorama_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\particles_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\particles_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\particles_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\pulse_system_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\pulse_system_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\pulse_system_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\rendersystemdx11_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\rendersystemdx11_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\rendersystemdx11_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\resourcesystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\resourcesystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\resourcesystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\scenesystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\scenesystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\scenesystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\schemasystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\schemasystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\schemasystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\server_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\server_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\server_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\soundsystem_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\soundsystem_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\soundsystem_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\steamaudio_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\steamaudio_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\steamaudio_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\vphysics2_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\vphysics2_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\vphysics2_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\worldrenderer_dll.cs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\worldrenderer_dll.json">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+    <None Include="output\worldrenderer_dll.rs">
+      <Filter>Исходные файлы\output</Filter>
+    </None>
+  </ItemGroup>
+</Project>

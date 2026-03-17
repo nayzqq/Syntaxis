@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Aimbot.cpp" />
+    <ClCompile Include="BombTimer.cpp" />
+    <ClCompile Include="chams.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="directx\directx.cpp" />
+    <ClCompile Include="DLLMain.cpp" />
+    <ClCompile Include="entity_system\entity.cpp" />
+    <ClCompile Include="ESP.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="HitMarker.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_tables.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="math\math.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="movement.cpp" />
+    <ClCompile Include="radar.cpp" />
+    <ClCompile Include="rcs.cpp" />
+    <ClCompile Include="SpectatorList.cpp" />
+    <ClCompile Include="triggerbot.cpp" />
+    <ClCompile Include="utils\utils.cpp" />
+    <ClCompile Include="valve\interfaces\interfaces.cpp" />
+    <ClCompile Include="valve\interfaces\vtables\cs_usercmd.pb.cc" />
+    <ClCompile Include="valve\interfaces\vtables\i_convar.cpp" />
+    <ClCompile Include="valve\interfaces\vtables\i_trace.cpp" />
+    <ClCompile Include="valve\interfaces\vtables\netmessages.pb.cc" />
+    <ClCompile Include="valve\interfaces\vtables\networkbasetypes.pb.cc" />
+    <ClCompile Include="valve\interfaces\vtables\network_connection.pb.cc" />
+    <ClCompile Include="valve\interfaces\vtables\usercmd.pb.cc" />
+    <ClCompile Include="valve\interfaces\vtables\usermessages.pb.cc" />
+    <ClCompile Include="valve\modules\modules.cpp" />
+    <ClCompile Include="valve\schema\schema.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aimbot.h" />
+    <ClInclude Include="BombTimer.h" />
+    <ClInclude Include="chams.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="damagescale.h" />
+    <ClInclude Include="darkside.hpp" />
+    <ClInclude Include="directx\directx.hpp" />
+    <ClInclude Include="entity_system\entity.hpp" />
+    <ClInclude Include="ESP.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="HitMarker.h" />
+    <ClInclude Include="hooks\hooks.hpp" />
+    <ClInclude Include="imconfig.h" />
+    <ClInclude Include="imgui.h" />
+    <ClInclude Include="imgui_impl_dx11.h" />
+    <ClInclude Include="imgui_impl_win32.h" />
+    <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="imstb_rectpack.h" />
+    <ClInclude Include="imstb_textedit.h" />
+    <ClInclude Include="imstb_truetype.h" />
+    <ClInclude Include="include\MinHook.h" />
+    <ClInclude Include="math\math.hpp" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="movement.h" />
+    <ClInclude Include="output\animationsystem_dll.hpp" />
+    <ClInclude Include="output\buttons.hpp" />
+    <ClInclude Include="output\client_dll.hpp" />
+    <ClInclude Include="output\engine2_dll.hpp" />
+    <ClInclude Include="output\host_dll.hpp" />
+    <ClInclude Include="output\interfaces.hpp" />
+    <ClInclude Include="output\materialsystem2_dll.hpp" />
+    <ClInclude Include="output\networksystem_dll.hpp" />
+    <ClInclude Include="output\offsets.hpp" />
+    <ClInclude Include="output\panorama_dll.hpp" />
+    <ClInclude Include="output\particles_dll.hpp" />
+    <ClInclude Include="output\pulse_system_dll.hpp" />
+    <ClInclude Include="output\rendersystemdx11_dll.hpp" />
+    <ClInclude Include="output\resourcesystem_dll.hpp" />
+    <ClInclude Include="output\scenesystem_dll.hpp" />
+    <ClInclude Include="output\schemasystem_dll.hpp" />
+    <ClInclude Include="output\server_dll.hpp" />
+    <ClInclude Include="output\soundsystem_dll.hpp" />
+    <ClInclude Include="output\steamaudio_dll.hpp" />
+    <ClInclude Include="output\vphysics2_dll.hpp" />
+    <ClInclude Include="output\worldrenderer_dll.hpp" />
+    <ClInclude Include="radar.h" />
+    <ClInclude Include="rcs.h" />
+    <ClInclude Include="SpectatorList.h" />
+    <ClInclude Include="triggerbot.h" />
+    <ClInclude Include="utils\key_handler.hpp" />
+    <ClInclude Include="utils\utils.hpp" />
+    <ClInclude Include="valve\classes\c_cs_player_controller.hpp" />
+    <ClInclude Include="valve\classes\c_cs_player_pawn.hpp" />
+    <ClInclude Include="valve\classes\c_envy_sky.hpp" />
+    <ClInclude Include="valve\classes\c_model.hpp" />
+    <ClInclude Include="valve\classes\c_player_camera_service.hpp" />
+    <ClInclude Include="valve\classes\c_post_processing.hpp" />
+    <ClInclude Include="valve\classes\c_scene_light_obj.hpp" />
+    <ClInclude Include="valve\classes\c_view_setup.hpp" />
+    <ClInclude Include="valve\classes\game_enums.hpp" />
+    <ClInclude Include="valve\interfaces\interfaces.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\cs_usercmd.pb.h" />
+    <ClInclude Include="valve\interfaces\vtables\i_client.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_convar.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_csgo_input.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_engine_client.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_file_system.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_global_vars.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_localize.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_mem_alloc.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_network_game_client.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_resource_game_system.h" />
+    <ClInclude Include="valve\interfaces\vtables\i_scene_system.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_schema_system.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\i_trace.hpp" />
+    <ClInclude Include="valve\interfaces\vtables\netmessages.pb.h" />
+    <ClInclude Include="valve\interfaces\vtables\networkbasetypes.pb.h" />
+    <ClInclude Include="valve\interfaces\vtables\network_connection.pb.h" />
+    <ClInclude Include="valve\interfaces\vtables\usercmd.pb.h" />
+    <ClInclude Include="valve\interfaces\vtables\usermessages.pb.h" />
+    <ClInclude Include="valve\modules\modules.hpp" />
+    <ClInclude Include="valve\schema\schema.hpp" />
+    <ClInclude Include="Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\minhook.x64d.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="output\animationsystem_dll.cs" />
+    <None Include="output\animationsystem_dll.json" />
+    <None Include="output\animationsystem_dll.rs" />
+    <None Include="output\buttons.cs" />
+    <None Include="output\buttons.json" />
+    <None Include="output\buttons.rs" />
+    <None Include="output\client_dll.cs" />
+    <None Include="output\client_dll.json" />
+    <None Include="output\client_dll.rs" />
+    <None Include="output\engine2_dll.cs" />
+    <None Include="output\engine2_dll.json" />
+    <None Include="output\engine2_dll.rs" />
+    <None Include="output\host_dll.cs" />
+    <None Include="output\host_dll.json" />
+    <None Include="output\host_dll.rs" />
+    <None Include="output\info.json" />
+    <None Include="output\interfaces.cs" />
+    <None Include="output\interfaces.json" />
+    <None Include="output\interfaces.rs" />
+    <None Include="output\materialsystem2_dll.cs" />
+    <None Include="output\materialsystem2_dll.json" />
+    <None Include="output\materialsystem2_dll.rs" />
+    <None Include="output\networksystem_dll.cs" />
+    <None Include="output\networksystem_dll.json" />
+    <None Include="output\networksystem_dll.rs" />
+    <None Include="output\offsets.cs" />
+    <None Include="output\offsets.json" />
+    <None Include="output\offsets.rs" />
+    <None Include="output\panorama_dll.cs" />
+    <None Include="output\panorama_dll.json" />
+    <None Include="output\panorama_dll.rs" />
+    <None Include="output\particles_dll.cs" />
+    <None Include="output\particles_dll.json" />
+    <None Include="output\particles_dll.rs" />
+    <None Include="output\pulse_system_dll.cs" />
+    <None Include="output\pulse_system_dll.json" />
+    <None Include="output\pulse_system_dll.rs" />
+    <None Include="output\rendersystemdx11_dll.cs" />
+    <None Include="output\rendersystemdx11_dll.json" />
+    <None Include="output\rendersystemdx11_dll.rs" />
+    <None Include="output\resourcesystem_dll.cs" />
+    <None Include="output\resourcesystem_dll.json" />
+    <None Include="output\resourcesystem_dll.rs" />
+    <None Include="output\scenesystem_dll.cs" />
+    <None Include="output\scenesystem_dll.json" />
+    <None Include="output\scenesystem_dll.rs" />
+    <None Include="output\schemasystem_dll.cs" />
+    <None Include="output\schemasystem_dll.json" />
+    <None Include="output\schemasystem_dll.rs" />
+    <None Include="output\server_dll.cs" />
+    <None Include="output\server_dll.json" />
+    <None Include="output\server_dll.rs" />
+    <None Include="output\soundsystem_dll.cs" />
+    <None Include="output\soundsystem_dll.json" />
+    <None Include="output\soundsystem_dll.rs" />
+    <None Include="output\steamaudio_dll.cs" />
+    <None Include="output\steamaudio_dll.json" />
+    <None Include="output\steamaudio_dll.rs" />
+    <None Include="output\vphysics2_dll.cs" />
+    <None Include="output\vphysics2_dll.json" />
+    <None Include="output\vphysics2_dll.rs" />
+    <None Include="output\worldrenderer_dll.cs" />
+    <None Include="output\worldrenderer_dll.json" />
+    <None Include="output\worldrenderer_dll.rs" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3667c358-3ef6-4503-aa31-4a9849826b6d}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)core;$(ProjectDir)sdk;$(ProjectDir)utilities;$(ProjectDir)dependies;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
